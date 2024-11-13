@@ -7,7 +7,9 @@ import ItemsPic from "../assets/pokeball.png"
 function Footer() {
   return (
     <footer className={styles.footer}>
-        <Link className={styles.footerLink} to="./pokemons">
+        <Link  
+        onClick={(event) => {event.preventDefault()}}
+        className={styles.footerLink} to="./pokemons">
         <img  className={styles.footerIcon}  src={PokemonPic} alt="Pokeball" />
         Pokemons
         </Link>
